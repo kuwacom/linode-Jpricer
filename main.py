@@ -73,8 +73,8 @@ def printString(pdfCanvas, pdfData):
         totalPrice = 0
         priceData = []
         for row in tmpPdfData: # メインの価格が書いてあるところを追加していく
-            priceData.append([row[0], row[5], float(row[5]) * tax])
-            totalPrice += ((float(row[5]) * tax) + float(row[5]))
+            priceData.append([row[0], row[6], float(row[6]) * tax])
+            totalPrice += ((float(row[6]) * tax) + float(row[6]))
 
         detailData.extend(priceData)
 
